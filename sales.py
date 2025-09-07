@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 data = pd.read_csv('monthly_sales.csv', parse_dates=['date'])
 data.set_index('date', inplace=True)
 
-# Feature Engineering:  Creating a supervised learning problem
+# Feature Engineering:  Creating a supervised learning proble m
 data['sales_diff'] = data['sales'].diff()
 data.dropna(inplace=True)
 
