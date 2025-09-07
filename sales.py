@@ -5,11 +5,11 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import matplotlib.pyplot as plt
 
-# Load the dataset
+# Load the  dataset
 data = pd.read_csv('monthly_sales.csv', parse_dates=['date'])
 data.set_index('date', inplace=True)
 
-# Feature Engineering: Creating a supervised learning problem
+# Feature Engineering:  Creating a supervised learning problem
 data['sales_diff'] = data['sales'].diff()
 data.dropna(inplace=True)
 
